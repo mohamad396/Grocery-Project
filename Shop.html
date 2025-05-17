@@ -55,8 +55,8 @@
 
       <h3>Filter by</h3>
       <div class="filter-group">
-        <label>Price</label>
-        <input type="range" min="2" max="10" />
+        <label for="price-input">Price</label>
+        <input id="price-input" class="price-input" type="number" min="2" max="50" />
         <div class="price-range">EGP 2 - EGP 50</div>
       </div>
 
@@ -90,91 +90,14 @@
         </div>
         <div class="sort">
           Sort by: <select>
-            <option>Recommended</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option value="rec">Recommended</option>
+            <option value="lth">Price: Low to High</option>
+            <option value="htl">Price: High to Low</option>
           </select>
         </div>
       </div>
 
-      <div class="products">
-        <div class="product-card">
-          <img src="Images/V7soda.jpg" alt="Vsoda" />
-          <p>V soda</p>
-          <span>10.00EGP</span>
-          <br>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="Images/pasta.jpg" alt="Whole Wheat Pasta" />
-          <p>Whole Wheat Pasta</p>
-          <span>3.00EGP</span>
-          <br>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="Images/sauce.jpg" alt="omato Sauce" />
-          <p>Canned Tomato Sauce</p>
-          <span>3.00EGP</span>
-          <br>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="Images/biscuit.jpg" alt="Biscuit" />
-          <p>McVities Digestive Chocolate Biscuit</p>
-          <span>5.00EGP</span>
-          <br>
-          <button class="btn">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            
-  <img src="Images/Tomato.jpg" alt="Tomato 1 kilo" />
-  <p>Tomatoes 1 kilo</p>
-  <span>4.99EGP</span>
-  <br>
-  <button class="btn">Add to Cart</button>
-</div>
-
-<div class="product-card">
-  <img src="Images/Strawberry.webp" alt="Strawberries 1 kilo" />
-  <p>Strawberries 1 kilo</p>
-  <span>3.99EGP</span>
-  <br>
-  <button class="btn">Add to Cart</button>
-</div>
-
-<div class="product-card">
-  <img src="Images/Avocado.jpg" alt="Avocadoes 1 kilo" />
-  <p>Avocadoes 1 kilo</p>
-  <span>6.00EGP</span>
-  <br>
-  <button class="btn">Add to Cart</button>
-</div>
-
-<div class="product-card">
-  <img src="Images/tuna.jpg" alt="Tuna" />
-  <p>Tuna fillet</p>
-  <span>20.00EGP</span>
-  <br>
-  <button class="btn">Add to Cart</button>
-</div>
-
-<div class="product-card">
-  <img src="Images/bread.jpg" alt="Bread" />
-  <p>White Bread</p>
-  <span>29.99EGP</span>
-  <br>
-  <button class="btn">Add to Cart</button>
-</div>
-
-<div class="product-card">
-  <img src="Images/liptonblack.jpg" alt="tea" />
-  <p>Lipton black tea</p>
-  <span>30.00EGP</span>
-  <br>
-  <button class="btn">Add to Cart</button>
-</div>   
-      </div>
+      <div class="products"></div>
     </main>
   </div>
 
@@ -235,5 +158,6 @@
                     
                   </div>
                     <p class="copyright">Made With &lt;3 By MSA Students</p>
+                    <script src="scripts/shop.js"></script>
 </body>
 </html>

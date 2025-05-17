@@ -13,14 +13,13 @@
 }
 /* End Variables */
 /* Start Components */
-.button{
+button {
     background-color: var(--main-color);
     width: fit-content;
     /* border-radius: 50px; */
-    outline: transparent;
-    border: transparent;
+    outline: none;
+    border: none;
     text-align: center;
-    color: white;
     padding: 10px 20px;
 }
  .main-title{
